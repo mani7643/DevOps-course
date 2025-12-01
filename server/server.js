@@ -36,7 +36,8 @@ app.use('*', (req, res) => {
 
 // Database connection
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect("mongodb+srv://manindraachanta0_db_user:3xXT18wel77okydn@temperature.f7vb7x0.mongodb.net/",
+    {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
