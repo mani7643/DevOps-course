@@ -30,11 +30,11 @@ jobs:
           run: npm run lint -- --max-warnings=0
 
         - name: Install frontend dependencies
-          working-directory: server
+          working-directory: client
           run: npm ci
 
         - name: Lint frontend
-          working-directory: server
+          working-directory: client
           run: npm run lint -- --max-warnings=0
 
         - name: Build backend image
