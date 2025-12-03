@@ -42,6 +42,7 @@ jobs:
 
         - name: Build frontend image
           run: docker build -t frontend ./client
+          //klj;kl
 
   deploy:
     needs: build-and-lint
